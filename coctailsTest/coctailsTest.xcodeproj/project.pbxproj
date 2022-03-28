@@ -10,10 +10,19 @@
 		9B6E3580F4356235E54608C5 /* Pods_coctailsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E263924E4EFA13E5B1C7752 /* Pods_coctailsTest.framework */; };
 		CE92ED4927F1FF7100A2BB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED4827F1FF7100A2BB7D /* AppDelegate.swift */; };
 		CE92ED4B27F1FF7100A2BB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED4A27F1FF7100A2BB7D /* SceneDelegate.swift */; };
-		CE92ED4D27F1FF7100A2BB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED4C27F1FF7100A2BB7D /* ViewController.swift */; };
-		CE92ED5027F1FF7100A2BB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE92ED4E27F1FF7100A2BB7D /* Main.storyboard */; };
 		CE92ED5227F1FF7600A2BB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE92ED5127F1FF7600A2BB7D /* Assets.xcassets */; };
 		CE92ED5527F1FF7600A2BB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE92ED5327F1FF7600A2BB7D /* LaunchScreen.storyboard */; };
+		CE92ED6527F228E000A2BB7D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6427F228E000A2BB7D /* MainViewController.swift */; };
+		CE92ED6727F228ED00A2BB7D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6627F228ED00A2BB7D /* MainPresenter.swift */; };
+		CE92ED6927F2291600A2BB7D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6827F2291600A2BB7D /* Model.swift */; };
+		CE92ED6C27F22A1000A2BB7D /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6B27F22A1000A2BB7D /* MainProtocols.swift */; };
+		CE92ED6E27F22B0C00A2BB7D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6D27F22B0C00A2BB7D /* NetworkManager.swift */; };
+		CE92ED7027F22F8100A2BB7D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6F27F22F8100A2BB7D /* ModuleBuilder.swift */; };
+		CE92ED7327F23AA700A2BB7D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7227F23AA700A2BB7D /* UIView+.swift */; };
+		CE92ED7727F25F2D00A2BB7D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7527F25F2D00A2BB7D /* CollectionViewCell.swift */; };
+		CE92ED7827F25F2D00A2BB7D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE92ED7627F25F2D00A2BB7D /* CollectionViewCell.xib */; };
+		CE92ED7A27F2629000A2BB7D /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7927F2629000A2BB7D /* URLFactory.swift */; };
+		CE92ED7C27F26A2500A2BB7D /* NetworkSeviceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7B27F26A2500A2BB7D /* NetworkSeviceProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +31,20 @@
 		CE92ED4527F1FF7100A2BB7D /* coctailsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coctailsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE92ED4827F1FF7100A2BB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE92ED4A27F1FF7100A2BB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE92ED4C27F1FF7100A2BB7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE92ED4F27F1FF7100A2BB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE92ED5127F1FF7600A2BB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE92ED5427F1FF7600A2BB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE92ED5627F1FF7600A2BB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE92ED6427F228E000A2BB7D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE92ED6627F228ED00A2BB7D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CE92ED6827F2291600A2BB7D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE92ED6B27F22A1000A2BB7D /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		CE92ED6D27F22B0C00A2BB7D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE92ED6F27F22F8100A2BB7D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		CE92ED7227F23AA700A2BB7D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		CE92ED7527F25F2D00A2BB7D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE92ED7627F25F2D00A2BB7D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		CE92ED7927F2629000A2BB7D /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		CE92ED7B27F26A2500A2BB7D /* NetworkSeviceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSeviceProtocols.swift; sourceTree = "<group>"; };
 		E8301DEF93C364E9C585151F /* Pods-coctailsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailsTest.release.xcconfig"; path = "Target Support Files/Pods-coctailsTest/Pods-coctailsTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +66,6 @@
 				6FC0B689FAB49013D1BFF7A3 /* Pods-coctailsTest.debug.xcconfig */,
 				E8301DEF93C364E9C585151F /* Pods-coctailsTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +98,80 @@
 		CE92ED4727F1FF7100A2BB7D /* coctailsTest */ = {
 			isa = PBXGroup;
 			children = (
-				CE92ED4827F1FF7100A2BB7D /* AppDelegate.swift */,
-				CE92ED4A27F1FF7100A2BB7D /* SceneDelegate.swift */,
-				CE92ED4C27F1FF7100A2BB7D /* ViewController.swift */,
-				CE92ED4E27F1FF7100A2BB7D /* Main.storyboard */,
+				CE92ED5F27F2273400A2BB7D /* Application */,
+				CE92ED6227F2276800A2BB7D /* ModuleBuilder */,
+				CE92ED6127F2275200A2BB7D /* ServiceLayer */,
+				CE92ED7127F23A7800A2BB7D /* Extensions */,
+				CE92ED6327F2280B00A2BB7D /* MainModule */,
+				CE92ED6A27F2292A00A2BB7D /* Model */,
 				CE92ED5127F1FF7600A2BB7D /* Assets.xcassets */,
 				CE92ED5327F1FF7600A2BB7D /* LaunchScreen.storyboard */,
 				CE92ED5627F1FF7600A2BB7D /* Info.plist */,
 			);
 			path = coctailsTest;
+			sourceTree = "<group>";
+		};
+		CE92ED5F27F2273400A2BB7D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED4827F1FF7100A2BB7D /* AppDelegate.swift */,
+				CE92ED4A27F1FF7100A2BB7D /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE92ED6127F2275200A2BB7D /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED6D27F22B0C00A2BB7D /* NetworkManager.swift */,
+				CE92ED7B27F26A2500A2BB7D /* NetworkSeviceProtocols.swift */,
+				CE92ED7927F2629000A2BB7D /* URLFactory.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		CE92ED6227F2276800A2BB7D /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED6F27F22F8100A2BB7D /* ModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		CE92ED6327F2280B00A2BB7D /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED6427F228E000A2BB7D /* MainViewController.swift */,
+				CE92ED6627F228ED00A2BB7D /* MainPresenter.swift */,
+				CE92ED6B27F22A1000A2BB7D /* MainProtocols.swift */,
+				CE92ED7427F25EFD00A2BB7D /* Cell */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		CE92ED6A27F2292A00A2BB7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED6827F2291600A2BB7D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE92ED7127F23A7800A2BB7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED7227F23AA700A2BB7D /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE92ED7427F25EFD00A2BB7D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED7527F25F2D00A2BB7D /* CollectionViewCell.swift */,
+				CE92ED7627F25F2D00A2BB7D /* CollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +236,7 @@
 			files = (
 				CE92ED5527F1FF7600A2BB7D /* LaunchScreen.storyboard in Resources */,
 				CE92ED5227F1FF7600A2BB7D /* Assets.xcassets in Resources */,
-				CE92ED5027F1FF7100A2BB7D /* Main.storyboard in Resources */,
+				CE92ED7827F25F2D00A2BB7D /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +289,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE92ED4D27F1FF7100A2BB7D /* ViewController.swift in Sources */,
+				CE92ED7727F25F2D00A2BB7D /* CollectionViewCell.swift in Sources */,
+				CE92ED6927F2291600A2BB7D /* Model.swift in Sources */,
+				CE92ED6527F228E000A2BB7D /* MainViewController.swift in Sources */,
+				CE92ED6C27F22A1000A2BB7D /* MainProtocols.swift in Sources */,
+				CE92ED7027F22F8100A2BB7D /* ModuleBuilder.swift in Sources */,
+				CE92ED7C27F26A2500A2BB7D /* NetworkSeviceProtocols.swift in Sources */,
+				CE92ED6E27F22B0C00A2BB7D /* NetworkManager.swift in Sources */,
 				CE92ED4927F1FF7100A2BB7D /* AppDelegate.swift in Sources */,
+				CE92ED7327F23AA700A2BB7D /* UIView+.swift in Sources */,
 				CE92ED4B27F1FF7100A2BB7D /* SceneDelegate.swift in Sources */,
+				CE92ED7A27F2629000A2BB7D /* URLFactory.swift in Sources */,
+				CE92ED6727F228ED00A2BB7D /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE92ED4E27F1FF7100A2BB7D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE92ED4F27F1FF7100A2BB7D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE92ED5327F1FF7600A2BB7D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,9 +447,9 @@
 				INFOPLIST_FILE = coctailsTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,9 +476,9 @@
 				INFOPLIST_FILE = coctailsTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +488,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
