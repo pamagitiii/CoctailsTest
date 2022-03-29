@@ -19,10 +19,11 @@
 		CE92ED6E27F22B0C00A2BB7D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6D27F22B0C00A2BB7D /* NetworkManager.swift */; };
 		CE92ED7027F22F8100A2BB7D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED6F27F22F8100A2BB7D /* ModuleBuilder.swift */; };
 		CE92ED7327F23AA700A2BB7D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7227F23AA700A2BB7D /* UIView+.swift */; };
-		CE92ED7727F25F2D00A2BB7D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7527F25F2D00A2BB7D /* CollectionViewCell.swift */; };
-		CE92ED7827F25F2D00A2BB7D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE92ED7627F25F2D00A2BB7D /* CollectionViewCell.xib */; };
 		CE92ED7A27F2629000A2BB7D /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7927F2629000A2BB7D /* URLFactory.swift */; };
 		CE92ED7C27F26A2500A2BB7D /* NetworkSeviceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7B27F26A2500A2BB7D /* NetworkSeviceProtocols.swift */; };
+		CE92ED7E27F3003100A2BB7D /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7D27F3003100A2BB7D /* UICollectionView+.swift */; };
+		CE92ED8027F3007900A2BB7D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED7F27F3007900A2BB7D /* CustomCell.swift */; };
+		CE92ED8527F3060300A2BB7D /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED8427F3060300A2BB7D /* CustomFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +42,11 @@
 		CE92ED6D27F22B0C00A2BB7D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CE92ED6F27F22F8100A2BB7D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		CE92ED7227F23AA700A2BB7D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		CE92ED7527F25F2D00A2BB7D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		CE92ED7627F25F2D00A2BB7D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		CE92ED7927F2629000A2BB7D /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
 		CE92ED7B27F26A2500A2BB7D /* NetworkSeviceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSeviceProtocols.swift; sourceTree = "<group>"; };
+		CE92ED7D27F3003100A2BB7D /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		CE92ED7F27F3007900A2BB7D /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		CE92ED8427F3060300A2BB7D /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 		E8301DEF93C364E9C585151F /* Pods-coctailsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailsTest.release.xcconfig"; path = "Target Support Files/Pods-coctailsTest/Pods-coctailsTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 				CE92ED6427F228E000A2BB7D /* MainViewController.swift */,
 				CE92ED6627F228ED00A2BB7D /* MainPresenter.swift */,
 				CE92ED6B27F22A1000A2BB7D /* MainProtocols.swift */,
+				CE92ED8327F305AC00A2BB7D /* FlowLayout */,
 				CE92ED7427F25EFD00A2BB7D /* Cell */,
 			);
 			path = MainModule;
@@ -161,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				CE92ED7227F23AA700A2BB7D /* UIView+.swift */,
+				CE92ED7D27F3003100A2BB7D /* UICollectionView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,10 +172,17 @@
 		CE92ED7427F25EFD00A2BB7D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CE92ED7527F25F2D00A2BB7D /* CollectionViewCell.swift */,
-				CE92ED7627F25F2D00A2BB7D /* CollectionViewCell.xib */,
+				CE92ED7F27F3007900A2BB7D /* CustomCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE92ED8327F305AC00A2BB7D /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				CE92ED8427F3060300A2BB7D /* CustomFlowLayout.swift */,
+			);
+			path = FlowLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +247,6 @@
 			files = (
 				CE92ED5527F1FF7600A2BB7D /* LaunchScreen.storyboard in Resources */,
 				CE92ED5227F1FF7600A2BB7D /* Assets.xcassets in Resources */,
-				CE92ED7827F25F2D00A2BB7D /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE92ED7727F25F2D00A2BB7D /* CollectionViewCell.swift in Sources */,
+				CE92ED7E27F3003100A2BB7D /* UICollectionView+.swift in Sources */,
+				CE92ED8027F3007900A2BB7D /* CustomCell.swift in Sources */,
 				CE92ED6927F2291600A2BB7D /* Model.swift in Sources */,
 				CE92ED6527F228E000A2BB7D /* MainViewController.swift in Sources */,
 				CE92ED6C27F22A1000A2BB7D /* MainProtocols.swift in Sources */,
 				CE92ED7027F22F8100A2BB7D /* ModuleBuilder.swift in Sources */,
+				CE92ED8527F3060300A2BB7D /* CustomFlowLayout.swift in Sources */,
 				CE92ED7C27F26A2500A2BB7D /* NetworkSeviceProtocols.swift in Sources */,
 				CE92ED6E27F22B0C00A2BB7D /* NetworkManager.swift in Sources */,
 				CE92ED4927F1FF7100A2BB7D /* AppDelegate.swift in Sources */,

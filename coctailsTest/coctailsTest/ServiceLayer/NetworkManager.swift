@@ -34,7 +34,16 @@ extension NetworkManager: CoctailsNetworkProtocol {
     }
 }
 
-enum NetworkError: Error {
+enum NetworkError: Error, LocalizedError {
     case wrongUrl
     case dataIsNil
+    
+    var errorDescription: String? {
+        switch self {
+        case .wrongUrl:
+            return "Wrong URL"
+        case .dataIsNil:
+            return "Can't get data from server"
+        }
+}
 }
