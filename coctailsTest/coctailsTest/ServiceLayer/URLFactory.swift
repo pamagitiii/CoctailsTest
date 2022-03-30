@@ -22,7 +22,6 @@ struct URLFactory {
         let methodQueryItems = params.parameters.map { URLQueryItem(name: $0, value: $1) }
         var resultComponents = baseUrlComponents
         resultComponents.queryItems = methodQueryItems
-        
         return resultComponents.url
     }
 }

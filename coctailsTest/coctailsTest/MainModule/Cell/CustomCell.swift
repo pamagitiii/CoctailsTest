@@ -10,7 +10,7 @@ import SnapKit
 
 class CustomCell: UICollectionViewCell {
     
-//    var isNeedsGradient = false
+    //var isNeedsGradient = false
     
     private let label: UILabel = {
         let label = UILabel()
@@ -37,34 +37,34 @@ class CustomCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-
+        
         label.snp.makeConstraints { make in
             make.right.left.equalToSuperview().inset(5)
             make.centerY.equalToSuperview()
         }
-
-//        if !(contentView.layer.sublayers?.first is CAGradientLayer ) &&  isNeedsGradient {
-//            gradi()
-//        }
+        
+        //        if !(contentView.layer.sublayers?.first is CAGradientLayer ) &&  isNeedsGradient {
+        //            gradi()
+        //        }
     }
     
     func setup(_ text: String) {
         label.text = text
     }
     
-    func gradi() {
-        let gradient = CAGradientLayer()
-               gradient.frame = contentView.bounds
-               gradient.colors = [UIColor.systemPink.cgColor, UIColor.purple.cgColor]
-               gradient.startPoint = CGPoint(x: 0, y: 1)
-               gradient.endPoint = CGPoint(x: 1, y: 0)
-               contentView.layer.insertSublayer(gradient, at: 0)
-    }
+//    func gradi() {
+//        let gradient = CAGradientLayer()
+//        gradient.frame = contentView.bounds
+//        gradient.colors = [UIColor.systemPink.cgColor, UIColor.purple.cgColor]
+//        gradient.startPoint = CGPoint(x: 0, y: 1)
+//        gradient.endPoint = CGPoint(x: 1, y: 0)
+//        contentView.layer.insertSublayer(gradient, at: 0)
+//    }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        if  (contentView.layer.sublayers?.first != nil) && (contentView.layer.sublayers?.first is CAGradientLayer ) {
-            contentView.layer.sublayers?.removeFirst()
-        }
-    }
+//    override func prepareForReuse() {
+//        super.prepareForReuse()
+//        if isNeedsGradient {
+//            gradi()
+//        }
+//    }
 }

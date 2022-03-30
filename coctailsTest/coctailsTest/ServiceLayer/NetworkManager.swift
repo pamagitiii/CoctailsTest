@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class NetworkManager {
-
+    
     func baseRequest<T: Decodable>(url: URL?, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = url else {
             completion(.failure(NetworkError.wrongUrl))
@@ -45,5 +45,5 @@ enum NetworkError: Error, LocalizedError {
         case .dataIsNil:
             return "Can't get data from server"
         }
-}
+    }
 }

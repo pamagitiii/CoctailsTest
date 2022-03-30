@@ -18,4 +18,5 @@ protocol MainPresenterProtocol: AnyObject {
     var selected: [String] { get }
     func viewDidLoad()
     func didSelectCellatIndex(_ index: Int)
+    func searchTextDidChange(_ text: String?)
 }

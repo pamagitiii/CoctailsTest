@@ -9,6 +9,7 @@ import Foundation
 
 class MainPresenter {
     
+    //MARK: - properties
     weak var view: MainViewProtocol?
     private let networkManager: CoctailsNetworkProtocol!
     var coctails: [String] = []
@@ -17,14 +18,27 @@ class MainPresenter {
             print(selected)
         }
     }
-    
+    //MARK: - init
     required init(view: MainViewProtocol, networkManager: CoctailsNetworkProtocol) {
         self.view = view
         self.networkManager = networkManager
     }
 }
 
+//MARK: - presenter protocol
 extension MainPresenter: MainPresenterProtocol {
+    func searchTextDidChange(_ text: String?) {
+        guard let text = text else { return }
+        
+        if text.isValid() {
+            selected = coctails.filter { $0.lowercased().contains(text.lowercased()) }
+            view?.didLoadData()
+        } else {
+            selected = []
+            view?.didLoadData()
+        }
+    }
+    
     func didSelectCellatIndex(_ index: Int) {
         let text = coctails[index]
         
@@ -33,8 +47,6 @@ extension MainPresenter: MainPresenterProtocol {
         } else {
             selected.append(text)
         }
-       // coctails[index].isChosen = true
-        //view?.didLoadData()
         view?.updateItems(at: index)
     }
     

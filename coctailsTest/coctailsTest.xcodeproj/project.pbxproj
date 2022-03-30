@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B6E3580F4356235E54608C5 /* Pods_coctailsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E263924E4EFA13E5B1C7752 /* Pods_coctailsTest.framework */; };
+		CE08B27827F4311D0061C290 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B27727F4311D0061C290 /* String+.swift */; };
 		CE92ED4927F1FF7100A2BB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED4827F1FF7100A2BB7D /* AppDelegate.swift */; };
 		CE92ED4B27F1FF7100A2BB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92ED4A27F1FF7100A2BB7D /* SceneDelegate.swift */; };
 		CE92ED5227F1FF7600A2BB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE92ED5127F1FF7600A2BB7D /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		3E263924E4EFA13E5B1C7752 /* Pods_coctailsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coctailsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC0B689FAB49013D1BFF7A3 /* Pods-coctailsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailsTest.debug.xcconfig"; path = "Target Support Files/Pods-coctailsTest/Pods-coctailsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CE08B27727F4311D0061C290 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		CE92ED4527F1FF7100A2BB7D /* coctailsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coctailsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE92ED4827F1FF7100A2BB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE92ED4A27F1FF7100A2BB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				CE92ED7227F23AA700A2BB7D /* UIView+.swift */,
 				CE92ED7D27F3003100A2BB7D /* UICollectionView+.swift */,
+				CE08B27727F4311D0061C290 /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				CE92ED7C27F26A2500A2BB7D /* NetworkSeviceProtocols.swift in Sources */,
 				CE92ED6E27F22B0C00A2BB7D /* NetworkManager.swift in Sources */,
 				CE92ED4927F1FF7100A2BB7D /* AppDelegate.swift in Sources */,
+				CE08B27827F4311D0061C290 /* String+.swift in Sources */,
 				CE92ED7327F23AA700A2BB7D /* UIView+.swift in Sources */,
 				CE92ED4B27F1FF7100A2BB7D /* SceneDelegate.swift in Sources */,
 				CE92ED7A27F2629000A2BB7D /* URLFactory.swift in Sources */,

@@ -12,6 +12,7 @@ protocol ModuleBuilderProtocol {
 }
 
 class ModuleBuilder: ModuleBuilderProtocol {
+    
     let networkManager = NetworkManager()
     
     func createMainModule() -> UIViewController {
