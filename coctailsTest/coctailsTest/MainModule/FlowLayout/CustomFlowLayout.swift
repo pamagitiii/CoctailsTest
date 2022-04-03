@@ -27,29 +27,3 @@ class LeftAlignedCollectionViewFlowLayout: UICollectionViewFlowLayout {
         return attributes
     }
 }
-    //вторая версия лэйаута
-
-//    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-//
-//        let attributesForElementsInRect = super.layoutAttributesForElements(in: rect)!
-//
-//        var newAttributesForElementsInRect = [UICollectionViewLayoutAttributes]()
-//
-//        var leftMargin: CGFloat = 0.0
-//
-//        for attributes in attributesForElementsInRect {
-//            let refAttributes = attributes
-//
-//            if (refAttributes.frame.origin.x == self.sectionInset.left) {
-//                leftMargin = self.sectionInset.left
-//            } else {
-//                var newLeftAlignedFrame = refAttributes.frame
-//                newLeftAlignedFrame.origin.x = leftMargin
-//                refAttributes.frame = newLeftAlignedFrame
-//            }
-//            leftMargin += refAttributes.frame.size.width + 10
-//            newAttributesForElementsInRect.append(refAttributes)
-//        }
-//        return newAttributesForElementsInRect
-//    }
-

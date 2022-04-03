@@ -13,11 +13,7 @@ class MainPresenter {
     weak var view: MainViewProtocol?
     private let networkManager: CoctailsNetworkProtocol!
     var coctails: [String] = []
-    var selected: [String] = [] {
-        didSet {
-            print(selected)
-        }
-    }
+    var selected: [String] = []
     //MARK: - init
     required init(view: MainViewProtocol, networkManager: CoctailsNetworkProtocol) {
         self.view = view

@@ -10,7 +10,16 @@ import SnapKit
 
 class CustomCell: UICollectionViewCell {
     
-    //var isNeedsGradient = false
+    //MARK: - proprties
+    var isNeedsGradient = false
+    
+    private var gradient: CAGradientLayer = {
+        let gradient = CAGradientLayer()
+        gradient.colors = [UIColor.systemPink.cgColor, UIColor.purple.cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 1, y: 0)
+        return gradient
+    }()
     
     private let label: UILabel = {
         let label = UILabel()
@@ -21,6 +30,7 @@ class CustomCell: UICollectionViewCell {
         return label
     }()
     
+    //MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.backgroundColor = .systemGray3
@@ -31,6 +41,7 @@ class CustomCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - life cycle
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
     }
@@ -42,29 +53,27 @@ class CustomCell: UICollectionViewCell {
             make.right.left.equalToSuperview().inset(5)
             make.centerY.equalToSuperview()
         }
-        
-        //        if !(contentView.layer.sublayers?.first is CAGradientLayer ) &&  isNeedsGradient {
-        //            gradi()
-        //        }
+
+        if isNeedsGradient {
+            gradient.frame = contentView.bounds
+            addGradient()
+        }
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        isNeedsGradient = false
+        if contentView.layer.sublayers?.count != nil && contentView.layer.sublayers!.count > 1 {
+            contentView.layer.sublayers?.remove(at: 0)
+        }
+    }
+    
+    //MARK: - methods
     func setup(_ text: String) {
         label.text = text
     }
     
-//    func gradi() {
-//        let gradient = CAGradientLayer()
-//        gradient.frame = contentView.bounds
-//        gradient.colors = [UIColor.systemPink.cgColor, UIColor.purple.cgColor]
-//        gradient.startPoint = CGPoint(x: 0, y: 1)
-//        gradient.endPoint = CGPoint(x: 1, y: 0)
-//        contentView.layer.insertSublayer(gradient, at: 0)
-//    }
-    
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        if isNeedsGradient {
-//            gradi()
-//        }
-//    }
+    private func addGradient() {
+            self.contentView.layer.insertSublayer(self.gradient, at: 0)
+    }
 }

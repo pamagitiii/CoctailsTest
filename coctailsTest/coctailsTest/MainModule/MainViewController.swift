@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class MainViewController: UIViewController {
-
+    
     //MARK: - properties
     var presenter: MainPresenter!
     
@@ -54,17 +54,15 @@ final class MainViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.register(CustomCell.self)
         collectionView.backgroundColor = .white
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.delegate = self
         collectionView.dataSource = self
-        
         searchTextField.delegate = self
         
         let layout = LeftAlignedCollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        //layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         layout.minimumInteritemSpacing = 8
         layout.minimumLineSpacing = 8
-        //layout.estimatedItemSize = CGSize(width: 100, height: 40)
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         collectionView.collectionViewLayout = layout
@@ -126,12 +124,9 @@ extension MainViewController: UICollectionViewDataSource {
         cell.setup(presenter.coctails[indexPath.item])
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = 8
-
-        if presenter.selected.contains(presenter.coctails[indexPath.item])
-        {
-            cell.contentView.backgroundColor = UIColor(red: 252/255, green: 53/255, blue: 155/255, alpha: 1)
-        } else {
-            cell.contentView.backgroundColor = .systemGray3
+        
+        if presenter.selected.contains(presenter.coctails[indexPath.item]) {
+            cell.isNeedsGradient = true
         }
         return cell
     }
